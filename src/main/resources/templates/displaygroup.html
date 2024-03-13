@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>This is Display Group</h1>
+
+	<table th:if="${studentList != null}">
+		<tr th:each="s : ${studentList}">
+			<td th:text="${s.id}">24</td>
+			<td th:text="${s.name}">Sally</td>
+			<td th:text="${s.age}"></td>
+			<td th:text="${s.birthday}"></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
